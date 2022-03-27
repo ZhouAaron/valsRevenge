@@ -9,6 +9,9 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+protocol GameViewControllerDelegate {
+    func didChangeLayout()
+}
 class GameViewController: UIViewController {
   
   override func viewDidLoad() {
@@ -40,6 +43,14 @@ class GameViewController: UIViewController {
       }
     }
   }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        guard let skView = self.view as? SKView,
+              let gameViewControllerDelegate = skView.scene as?
+                GameViewControllerDelegate else { return }
+        
+        gameViewControllerDelegate.didChangeLayout()
+    }
   
   override var shouldAutorotate: Bool {
     return true
