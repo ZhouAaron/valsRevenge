@@ -27,6 +27,12 @@ class GameScene: SKScene {
         player?.move(.stop)
         
         setupCamera()
+        
+        let grassMapNode = childNode(withName: "Grass Tile Map") as? SKTileMapNode
+        grassMapNode?.setupEdgeLoop()
+        
+        let dungeonMapNode = childNode(withName: "Dungeon Tile Map") as? SKTileMapNode
+        dungeonMapNode?.setupMapPhysics()
     }
     
     func setupCamera() {
