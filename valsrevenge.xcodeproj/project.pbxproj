@@ -8,6 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4A193F8427F1C3D400212A06 /* SKTileMapNode+Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193F8327F1C3D400212A06 /* SKTileMapNode+Physics.swift */; };
+		4A193F8C27F1D2A000212A06 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F8B27F1D2A000212A06 /* music.mp3 */; };
+		4A193F9927F1D2C100212A06 /* monster_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F8D27F1D2C100212A06 /* monster_hit.mp3 */; };
+		4A193F9A27F1D2C100212A06 /* exit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F8E27F1D2C100212A06 /* exit.mp3 */; };
+		4A193F9B27F1D2C100212A06 /* player_hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F8F27F1D2C100212A06 /* player_hit.mp3 */; };
+		4A193F9C27F1D2C100212A06 /* monster_die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9027F1D2C100212A06 /* monster_die.mp3 */; };
+		4A193F9D27F1D2C100212A06 /* key.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9127F1D2C100212A06 /* key.mp3 */; };
+		4A193F9E27F1D2C100212A06 /* SoundLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193F9227F1D2C100212A06 /* SoundLibrary.swift */; };
+		4A193F9F27F1D2C100212A06 /* treasure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9327F1D2C100212A06 /* treasure.mp3 */; };
+		4A193FA027F1D2C100212A06 /* player_die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9427F1D2C100212A06 /* player_die.mp3 */; };
+		4A193FA127F1D2C100212A06 /* destroyed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9527F1D2C100212A06 /* destroyed.mp3 */; };
+		4A193FA227F1D2C100212A06 /* door_open.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9627F1D2C100212A06 /* door_open.mp3 */; };
+		4A193FA327F1D2C100212A06 /* food.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9727F1D2C100212A06 /* food.mp3 */; };
+		4A193FA427F1D2C100212A06 /* throw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A193F9827F1D2C100212A06 /* throw.mp3 */; };
+		4A193FA627F1D2FC00212A06 /* HealthMeter.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A193FA527F1D2FC00212A06 /* HealthMeter.sks */; };
+		4A193FAA27F1D46200212A06 /* HealthComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FA927F1D46200212A06 /* HealthComponent.swift */; };
+		4A193FAD27F1E10800212A06 /* MonsterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FAC27F1E10800212A06 /* MonsterEntity.swift */; };
+		4A193FAF27F1E49700212A06 /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FAE27F1E49700212A06 /* RenderComponent.swift */; };
+		4A193FB127F1FEE600212A06 /* GeneratorComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB027F1FEE600212A06 /* GeneratorComponent.swift */; };
+		4A193FB327F1FF8700212A06 /* GKComponent+Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB227F1FF8600212A06 /* GKComponent+Node.swift */; };
+		4A193FB527F2047A00212A06 /* SkTexture+LoadTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB427F2047A00212A06 /* SkTexture+LoadTextures.swift */; };
+		4A193FB727F2058500212A06 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB627F2058500212A06 /* AnimationComponent.swift */; };
+		4A193FB927F206CF00212A06 /* GameObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB827F206CF00212A06 /* GameObjects.swift */; };
 		4A6EDAF327F165B90012F0A2 /* MainTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */; };
 		4A92087B27EEF86B00A0A74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92087A27EEF86B00A0A74B /* AppDelegate.swift */; };
 		4A92087D27EEF86B00A0A74B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A92087C27EEF86B00A0A74B /* GameScene.sks */; };
@@ -25,6 +47,28 @@
 
 /* Begin PBXFileReference section */
 		4A193F8327F1C3D400212A06 /* SKTileMapNode+Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTileMapNode+Physics.swift"; sourceTree = "<group>"; };
+		4A193F8B27F1D2A000212A06 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		4A193F8D27F1D2C100212A06 /* monster_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monster_hit.mp3; sourceTree = "<group>"; };
+		4A193F8E27F1D2C100212A06 /* exit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exit.mp3; sourceTree = "<group>"; };
+		4A193F8F27F1D2C100212A06 /* player_hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = player_hit.mp3; sourceTree = "<group>"; };
+		4A193F9027F1D2C100212A06 /* monster_die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = monster_die.mp3; sourceTree = "<group>"; };
+		4A193F9127F1D2C100212A06 /* key.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = key.mp3; sourceTree = "<group>"; };
+		4A193F9227F1D2C100212A06 /* SoundLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundLibrary.swift; sourceTree = "<group>"; };
+		4A193F9327F1D2C100212A06 /* treasure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = treasure.mp3; sourceTree = "<group>"; };
+		4A193F9427F1D2C100212A06 /* player_die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = player_die.mp3; sourceTree = "<group>"; };
+		4A193F9527F1D2C100212A06 /* destroyed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = destroyed.mp3; sourceTree = "<group>"; };
+		4A193F9627F1D2C100212A06 /* door_open.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = door_open.mp3; sourceTree = "<group>"; };
+		4A193F9727F1D2C100212A06 /* food.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = food.mp3; sourceTree = "<group>"; };
+		4A193F9827F1D2C100212A06 /* throw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = throw.mp3; sourceTree = "<group>"; };
+		4A193FA527F1D2FC00212A06 /* HealthMeter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HealthMeter.sks; sourceTree = "<group>"; };
+		4A193FA927F1D46200212A06 /* HealthComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthComponent.swift; sourceTree = "<group>"; };
+		4A193FAC27F1E10800212A06 /* MonsterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterEntity.swift; sourceTree = "<group>"; };
+		4A193FAE27F1E49700212A06 /* RenderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
+		4A193FB027F1FEE600212A06 /* GeneratorComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratorComponent.swift; sourceTree = "<group>"; };
+		4A193FB227F1FF8600212A06 /* GKComponent+Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GKComponent+Node.swift"; sourceTree = "<group>"; };
+		4A193FB427F2047A00212A06 /* SkTexture+LoadTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkTexture+LoadTextures.swift"; sourceTree = "<group>"; };
+		4A193FB627F2058500212A06 /* AnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		4A193FB827F206CF00212A06 /* GameObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjects.swift; sourceTree = "<group>"; };
 		4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainTileSet.sks; sourceTree = "<group>"; };
 		4A92087727EEF86B00A0A74B /* valsrevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valsrevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A92087A27EEF86B00A0A74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +96,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A193F8527F1CF2000212A06 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4A92089727F0098200A0A74B /* SKScene+ViewProperties.swift */,
+				4A92089927F0125900A0A74B /* GameScene+ViewUpdates.swift */,
+				4A193F8327F1C3D400212A06 /* SKTileMapNode+Physics.swift */,
+				4A193FB227F1FF8600212A06 /* GKComponent+Node.swift */,
+				4A193FB427F2047A00212A06 /* SkTexture+LoadTextures.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4A193F8627F1CF4400212A06 /* Reference Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				4A193FA527F1D2FC00212A06 /* HealthMeter.sks */,
+				4A92089527EFFEC000A0A74B /* AttackButton.sks */,
+				4A92089327EFFBE600A0A74B /* Controller.sks */,
+			);
+			path = "Reference Nodes";
+			sourceTree = "<group>";
+		};
+		4A193F8727F1CF9300212A06 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4A92087C27EEF86B00A0A74B /* GameScene.sks */,
+				4A92088027EEF86B00A0A74B /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4A193F8827F1CFAC00212A06 /* Tile sets */ = {
+			isa = PBXGroup;
+			children = (
+				4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */,
+			);
+			path = "Tile sets";
+			sourceTree = "<group>";
+		};
+		4A193F8927F1D08F00212A06 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				4A193F8B27F1D2A000212A06 /* music.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		4A193F8A27F1D09500212A06 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4A193F9527F1D2C100212A06 /* destroyed.mp3 */,
+				4A193F9627F1D2C100212A06 /* door_open.mp3 */,
+				4A193F8E27F1D2C100212A06 /* exit.mp3 */,
+				4A193F9727F1D2C100212A06 /* food.mp3 */,
+				4A193F9127F1D2C100212A06 /* key.mp3 */,
+				4A193F9027F1D2C100212A06 /* monster_die.mp3 */,
+				4A193F8D27F1D2C100212A06 /* monster_hit.mp3 */,
+				4A193F9427F1D2C100212A06 /* player_die.mp3 */,
+				4A193F8F27F1D2C100212A06 /* player_hit.mp3 */,
+				4A193F9227F1D2C100212A06 /* SoundLibrary.swift */,
+				4A193F9827F1D2C100212A06 /* throw.mp3 */,
+				4A193F9327F1D2C100212A06 /* treasure.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4A193FA827F1D43300212A06 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4A193FA927F1D46200212A06 /* HealthComponent.swift */,
+				4A193FAE27F1E49700212A06 /* RenderComponent.swift */,
+				4A193FB027F1FEE600212A06 /* GeneratorComponent.swift */,
+				4A193FB627F2058500212A06 /* AnimationComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4A193FAB27F1E0AC00212A06 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4A92089127EF472500A0A74B /* Player.swift */,
+				4A193FAC27F1E10800212A06 /* MonsterEntity.swift */,
+				4A193FB827F206CF00212A06 /* GameObjects.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		4A92086E27EEF86B00A0A74B = {
 			isa = PBXGroup;
 			children = (
@@ -71,19 +202,18 @@
 		4A92087927EEF86B00A0A74B /* valsrevenge */ = {
 			isa = PBXGroup;
 			children = (
-				4A92087A27EEF86B00A0A74B /* AppDelegate.swift */,
-				4A92087C27EEF86B00A0A74B /* GameScene.sks */,
-				4A92089527EFFEC000A0A74B /* AttackButton.sks */,
-				4A92088027EEF86B00A0A74B /* GameScene.swift */,
-				4A92089727F0098200A0A74B /* SKScene+ViewProperties.swift */,
-				4A92089927F0125900A0A74B /* GameScene+ViewUpdates.swift */,
-				4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */,
-				4A193F8327F1C3D400212A06 /* SKTileMapNode+Physics.swift */,
-				4A92089327EFFBE600A0A74B /* Controller.sks */,
 				4A92088227EEF86B00A0A74B /* GameViewController.swift */,
-				4A92089127EF472500A0A74B /* Player.swift */,
-				4A92088427EEF86B00A0A74B /* Main.storyboard */,
 				4A92088727EEF86B00A0A74B /* Assets.xcassets */,
+				4A193F8927F1D08F00212A06 /* Music */,
+				4A193F8A27F1D09500212A06 /* Sounds */,
+				4A193F8827F1CFAC00212A06 /* Tile sets */,
+				4A193F8727F1CF9300212A06 /* Scenes */,
+				4A193F8627F1CF4400212A06 /* Reference Nodes */,
+				4A193F8527F1CF2000212A06 /* Extensions */,
+				4A193FAB27F1E0AC00212A06 /* Entities */,
+				4A193FA827F1D43300212A06 /* Components */,
+				4A92087A27EEF86B00A0A74B /* AppDelegate.swift */,
+				4A92088427EEF86B00A0A74B /* Main.storyboard */,
 				4A92088927EEF86B00A0A74B /* LaunchScreen.storyboard */,
 			);
 			path = valsrevenge;
@@ -147,12 +277,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A193F8C27F1D2A000212A06 /* music.mp3 in Resources */,
 				4A92088627EEF86B00A0A74B /* Main.storyboard in Resources */,
+				4A193FA327F1D2C100212A06 /* food.mp3 in Resources */,
+				4A193FA427F1D2C100212A06 /* throw.mp3 in Resources */,
+				4A193F9B27F1D2C100212A06 /* player_hit.mp3 in Resources */,
+				4A193FA627F1D2FC00212A06 /* HealthMeter.sks in Resources */,
 				4A92087D27EEF86B00A0A74B /* GameScene.sks in Resources */,
 				4A6EDAF327F165B90012F0A2 /* MainTileSet.sks in Resources */,
 				4A92089427EFFBE600A0A74B /* Controller.sks in Resources */,
+				4A193F9927F1D2C100212A06 /* monster_hit.mp3 in Resources */,
+				4A193FA227F1D2C100212A06 /* door_open.mp3 in Resources */,
+				4A193F9D27F1D2C100212A06 /* key.mp3 in Resources */,
+				4A193F9A27F1D2C100212A06 /* exit.mp3 in Resources */,
+				4A193FA027F1D2C100212A06 /* player_die.mp3 in Resources */,
+				4A193F9F27F1D2C100212A06 /* treasure.mp3 in Resources */,
 				4A92089627EFFEC000A0A74B /* AttackButton.sks in Resources */,
 				4A92088827EEF86B00A0A74B /* Assets.xcassets in Resources */,
+				4A193F9C27F1D2C100212A06 /* monster_die.mp3 in Resources */,
+				4A193FA127F1D2C100212A06 /* destroyed.mp3 in Resources */,
 				4A92088B27EEF86B00A0A74B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,13 +307,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A193FB927F206CF00212A06 /* GameObjects.swift in Sources */,
 				4A193F8427F1C3D400212A06 /* SKTileMapNode+Physics.swift in Sources */,
+				4A193FB127F1FEE600212A06 /* GeneratorComponent.swift in Sources */,
 				4A92089227EF472500A0A74B /* Player.swift in Sources */,
+				4A193FAA27F1D46200212A06 /* HealthComponent.swift in Sources */,
+				4A193FB327F1FF8700212A06 /* GKComponent+Node.swift in Sources */,
+				4A193FB527F2047A00212A06 /* SkTexture+LoadTextures.swift in Sources */,
+				4A193FB727F2058500212A06 /* AnimationComponent.swift in Sources */,
 				4A92089827F0098200A0A74B /* SKScene+ViewProperties.swift in Sources */,
+				4A193F9E27F1D2C100212A06 /* SoundLibrary.swift in Sources */,
 				4A92088127EEF86B00A0A74B /* GameScene.swift in Sources */,
 				4A92088327EEF86B00A0A74B /* GameViewController.swift in Sources */,
 				4A92089A27F0125900A0A74B /* GameScene+ViewUpdates.swift in Sources */,
+				4A193FAF27F1E49700212A06 /* RenderComponent.swift in Sources */,
 				4A92087B27EEF86B00A0A74B /* AppDelegate.swift in Sources */,
+				4A193FAD27F1E10800212A06 /* MonsterEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
