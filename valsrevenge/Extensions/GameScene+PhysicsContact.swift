@@ -13,6 +13,21 @@ extension GameScene: SKPhysicsContactDelegate {
         | contact.bodyB.categoryBitMask
         
         switch collision {
+            
+            // MARK:  - Projectile | Monster
+        case PhysicsBody.projectile.categoryBitMask | PhysicsBody.monster.categoryBitMask:
+            let monsterNode = contact.bodyA.categoryBitMask == PhysicsBody.monster.categoryBitMask ? contact.bodyA.node : contact.bodyB.node
+            if let healthComponent = monsterNode?.entity?.component(ofType: HealthComponent.self) {
+                healthComponent.updateHealth(-1, forNode: monsterNode)
+            }
+            
+            // MARK: -  Player | Monster
+        case PhysicsBody.player.categoryBitMask | PhysicsBody.monster.categoryBitMask:
+            let playerNode = contact.bodyA.categoryBitMask == PhysicsBody.player.categoryBitMask ? contact.bodyA.node : contact.bodyB.node
+            if let healthComponent = playerNode?.entity?.component(ofType: HealthComponent.self) {
+                healthComponent.updateHealth(-1, forNode: playerNode)
+            }
+            
             // MARK: -  Projectile | Collectible
             
         case PhysicsBody.projectile.categoryBitMask |
