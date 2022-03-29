@@ -4,6 +4,7 @@
 //
 //  Created by Aaron on 2022/3/29.
 //
+
 import SpriteKit
 import GameplayKit
 
@@ -16,7 +17,6 @@ class GeneratorComponent: GKComponent {
     @GKInspectable var monsterHealth: Int = 3
     
     var isRunning = false
-    
     
     override func didAddToEntity() {
         let physicsComponent = PhysicsComponent()
@@ -45,6 +45,7 @@ class GeneratorComponent: GKComponent {
         isRunning = false
         componentNode.removeAction(forKey: "spawnMonster")
     }
+    
     func spawnMonsterEntity() {
         let monsterEntity = MonsterEntity(monsterType: monsterType)
         let renderComponent = RenderComponent(imageNamed: "\(monsterType)_0",
@@ -57,7 +58,7 @@ class GeneratorComponent: GKComponent {
             componentNode.parent?.addChild(monsterNode)
             
             // Initial spawn movement
-            let randomPositions: [CGFloat] = [-50, -50, 50]
+            let randomPositions: [CGFloat] = [-50,-50,50]
             let randomX = randomPositions.randomElement() ?? 0
             monsterNode.run(SKAction.moveBy(x: randomX, y: 0, duration: 1.0))
             
@@ -89,7 +90,8 @@ class GeneratorComponent: GKComponent {
                 if isRunning == false {
                     startGenerator()
                 }
-            default: break
+            default:
+                break
             }
         }
     }

@@ -50,6 +50,7 @@
 		4AFC05FA27F318D2006F22D3 /* MainGameStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05F927F318D2006F22D3 /* MainGameStates.swift */; };
 		4AFC05FC27F32568006F22D3 /* SKNode+AgentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05FB27F32568006F22D3 /* SKNode+AgentDelegate.swift */; };
 		4AFC05FE27F3272B006F22D3 /* AgentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05FD27F3272B006F22D3 /* AgentComponent.swift */; };
+		4AFC060027F34263006F22D3 /* PathFindingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05FF27F34263006F22D3 /* PathFindingComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		4AFC05F927F318D2006F22D3 /* MainGameStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameStates.swift; sourceTree = "<group>"; };
 		4AFC05FB27F32568006F22D3 /* SKNode+AgentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+AgentDelegate.swift"; sourceTree = "<group>"; };
 		4AFC05FD27F3272B006F22D3 /* AgentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentComponent.swift; sourceTree = "<group>"; };
+		4AFC05FF27F34263006F22D3 /* PathFindingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathFindingComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				4ABD516727F2AEED00843C6D /* CollectibleComponent.swift */,
 				4ABD516927F2B88F00843C6D /* PhysicsComponent.swift */,
 				4AFC05FD27F3272B006F22D3 /* AgentComponent.swift */,
+				4AFC05FF27F34263006F22D3 /* PathFindingComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				4A92088327EEF86B00A0A74B /* GameViewController.swift in Sources */,
 				4A92089A27F0125900A0A74B /* GameScene+ViewUpdates.swift in Sources */,
 				4A193FAF27F1E49700212A06 /* RenderComponent.swift in Sources */,
+				4AFC060027F34263006F22D3 /* PathFindingComponent.swift in Sources */,
 				4A92087B27EEF86B00A0A74B /* AppDelegate.swift in Sources */,
 				4A193FAD27F1E10800212A06 /* MonsterEntity.swift in Sources */,
 				4ABD516C27F2C42200843C6D /* GameScene+PhysicsContact.swift in Sources */,

@@ -30,7 +30,7 @@ struct Collectible {
 // MARK: - COMPONENT CODE STARTS HERE
 
 class CollectibleComponent: GKComponent {
-    // meaning you’ll have access to them in the Scene Editor.
+    
     @GKInspectable var collectibleType: String =
     GameObject.defaultCollectibleType
     @GKInspectable var value: Int = 1
@@ -45,7 +45,7 @@ class CollectibleComponent: GKComponent {
         else {
             return
         }
-        // preload these action so that there is no delay when you first play the sound
+        
         collectSoundAction =
         SKAction.playSoundFileNamed(collectible.collectSoundFile,
                                     waitForCompletion: false)

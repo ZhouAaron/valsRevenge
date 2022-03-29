@@ -19,7 +19,6 @@ class HealthComponent: GKComponent {
     private var hitAction = SKAction()
     private var dieAction = SKAction()
     
-    
     override func didAddToEntity() {
         if let healthMeter = SKReferenceNode(fileNamed: "HealthMeter") {
             healthMeter.position = CGPoint(x: 0, y: 100)
@@ -28,19 +27,25 @@ class HealthComponent: GKComponent {
             updateHealth(0, forNode: componentNode)
             
             if let _ = componentNode as? Player {
-                hitAction = SKAction.playSoundFileNamed("player_hit", waitForCompletion: false)
-                let playSound = SKAction.playSoundFileNamed("player_die", waitForCompletion: false)
+                hitAction = SKAction.playSoundFileNamed("player_hit",
+                                                        waitForCompletion: false)
+                
+                let playSound = SKAction.playSoundFileNamed("player_die",
+                                                            waitForCompletion: false)
                 dieAction = SKAction.run {
                     self.componentNode.run(playSound, completion: {
                         // TODO: Add code to restart the game
-                        // but for now , reset the player's health
+                        // but for now, reset the player's health
                         self.currentHealth = self.maxHealth
                     })
                 }
-            } else {
-                hitAction = SKAction.playSoundFileNamed("monster_hit", waitForCompletion: false)
-                let playSound = SKAction.playSoundFileNamed("monster_die", waitForCompletion: false)
                 
+            } else {
+                hitAction = SKAction.playSoundFileNamed("monster_hit",
+                                                        waitForCompletion: false)
+                
+                let playSound = SKAction.playSoundFileNamed("monster_die",
+                                                            waitForCompletion: false)
                 dieAction = SKAction.run {
                     self.componentNode.run(playSound, completion: {
                         self.componentNode.removeFromParent()
