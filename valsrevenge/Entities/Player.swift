@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+import GameplayKit
 
 enum Direction: String {
   case stop
@@ -21,11 +22,82 @@ enum Direction: String {
 }
 
 class Player: SKSpriteNode {
+    // 什么意思 这一步没看懂
+  var stateMachine = GKStateMachine(states: [PlayerHasKeyState(),
+                                             PlayerHasNoKeyState()])
   
   private var currentDirection = Direction.stop
+    //  track how many keys Val has in her pockets and how much treasure she’s collected.
+  private var keys: Int = 0 {
+    didSet {
+      print("Keys: \(keys)")
+      if keys < 1 {
+        stateMachine.enter(PlayerHasNoKeyState.self)
+      } else {
+        stateMachine.enter(PlayerHasKeyState.self)
+      }
+    }
+  }
+  
+  private var treasure: Int = 0 {
+    didSet {
+      print("Treasure: \(treasure)")
+    }
+  }
+  
+  // Override this method to allow for a class to work in the Scene Editor
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    
+    stateMachine.enter(PlayerHasNoKeyState.self)
+  }
+  
+  func collectItem(_ collectibleNode: SKNode) {
+    guard let collectible = collectibleNode.entity?.component(ofType:
+      CollectibleComponent.self) else {
+        return
+    }
+    
+    collectible.collectedItem()
+    
+    switch GameObjectType(rawValue: collectible.collectibleType) {
+    case .key:
+      // print("collected key")
+      keys += collectible.value
+      
+    case .food:
+        // 没懂
+      // print("collected food")
+      if let hc = entity?.component(ofType: HealthComponent.self) {
+        hc.updateHealth(collectible.value, forNode: self)
+      }
+      
+    case .treasure:
+      // print("collected treasure")
+      treasure += collectible.value
+      
+    default:
+      break
+    }
+  }
+  
+  func useKeyToOpenDoor(_ doorNode: SKNode) {
+    // print("Use key to open door")
+    
+    switch stateMachine.currentState {
+    case is PlayerHasKeyState:
+      keys -= 1
+      
+      doorNode.removeFromParent()
+      run(SKAction.playSoundFileNamed("door_open",
+                                      waitForCompletion: true))
+    default:
+      break
+    }
+  }
   
   func move(_ direction: Direction) {
-    print("move player: \(direction.rawValue)")
+    // print("move player: \(direction.rawValue)")
     switch direction {
     case .up:
       self.physicsBody?.velocity = CGVector(dx: 0, dy: 100)
@@ -62,6 +134,19 @@ class Player: SKSpriteNode {
     let projectile = SKSpriteNode(imageNamed: "knife")
     projectile.position = CGPoint(x: 0.0, y: 0.0)
     addChild(projectile)
+    
+    // Set up physics for projectile
+    let physicsBody = SKPhysicsBody(rectangleOf: projectile.size)
+    
+    physicsBody.affectedByGravity = false
+    physicsBody.allowsRotation = true
+    physicsBody.isDynamic = true
+    
+    physicsBody.categoryBitMask = PhysicsBody.projectile.categoryBitMask
+    physicsBody.contactTestBitMask = PhysicsBody.projectile.contactTestBitMask
+    physicsBody.collisionBitMask = PhysicsBody.projectile.collisionBitMask
+    
+    projectile.physicsBody = physicsBody
     
     var throwDirection = CGVector(dx: 0, dy: 0)
     

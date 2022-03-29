@@ -2,10 +2,8 @@
 //  GeneratorComponent.swift
 //  valsrevenge
 //
-//  Created by Tammy Coron on 7/4/20.
-//  Copyright © 2020 Just Write Code LLC. All rights reserved.
+//  Created by Aaron on 2022/3/29.
 //
-
 import SpriteKit
 import GameplayKit
 

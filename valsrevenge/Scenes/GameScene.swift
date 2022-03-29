@@ -33,13 +33,12 @@ class GameScene: SKScene {
         
         let dungeonMapNode = childNode(withName: "Dungeon Tile Map") as? SKTileMapNode
         dungeonMapNode?.setupMapPhysics()
+        
+        physicsWorld.contactDelegate = self
     }
     
     func setupCamera() {
-        // verifies that the player node exists,
-        guard let player = player else {
-            return
-        }
+        guard let player = player else { return }
         let distance = SKRange(constantValue: 0)
         let playerConstraint = SKConstraint.distance(distance, to: player)
         
@@ -113,14 +112,18 @@ class GameScene: SKScene {
         
         self.lastUpdateTime = currentTime
     }
+    
     override func didFinishUpdate() {
         updateControllerLocation()
     }
+    
     func updateControllerLocation() {
         let controller = childNode(withName: "//controller")
-        controller?.position = CGPoint(x: (viewLeft + margin + insets.left ), y: (viewBottom + margin + insets.bottom))
+        controller?.position = CGPoint(x: (viewLeft + margin + insets.left),
+                                       y: (viewBottom + margin + insets.bottom))
         
         let attackButton = childNode(withName: "//attackButton")
-        attackButton?.position = CGPoint(x: (viewRight - margin - insets.right), y: (viewBottom + margin + insets.bottom))
+        attackButton?.position = CGPoint(x: (viewRight - margin - insets.right),
+                                         y: (viewBottom + margin + insets.bottom))
     }
 }
