@@ -32,21 +32,23 @@
 		4A193FB927F206CF00212A06 /* GameObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A193FB827F206CF00212A06 /* GameObjects.swift */; };
 		4A6EDAF327F165B90012F0A2 /* MainTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */; };
 		4A92087B27EEF86B00A0A74B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92087A27EEF86B00A0A74B /* AppDelegate.swift */; };
-		4A92087D27EEF86B00A0A74B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A92087C27EEF86B00A0A74B /* GameScene.sks */; };
 		4A92088127EEF86B00A0A74B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92088027EEF86B00A0A74B /* GameScene.swift */; };
 		4A92088327EEF86B00A0A74B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92088227EEF86B00A0A74B /* GameViewController.swift */; };
 		4A92088627EEF86B00A0A74B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A92088427EEF86B00A0A74B /* Main.storyboard */; };
 		4A92088827EEF86B00A0A74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A92088727EEF86B00A0A74B /* Assets.xcassets */; };
 		4A92088B27EEF86B00A0A74B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A92088927EEF86B00A0A74B /* LaunchScreen.storyboard */; };
 		4A92089227EF472500A0A74B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92089127EF472500A0A74B /* Player.swift */; };
-		4A92089427EFFBE600A0A74B /* Controller.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A92089327EFFBE600A0A74B /* Controller.sks */; };
-		4A92089627EFFEC000A0A74B /* AttackButton.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4A92089527EFFEC000A0A74B /* AttackButton.sks */; };
 		4A92089827F0098200A0A74B /* SKScene+ViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92089727F0098200A0A74B /* SKScene+ViewProperties.swift */; };
 		4A92089A27F0125900A0A74B /* GameScene+ViewUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A92089927F0125900A0A74B /* GameScene+ViewUpdates.swift */; };
 		4ABD516627F2AAA900843C6D /* PlayerStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD516527F2AAA900843C6D /* PlayerStates.swift */; };
 		4ABD516827F2AEED00843C6D /* CollectibleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD516727F2AEED00843C6D /* CollectibleComponent.swift */; };
 		4ABD516A27F2B88F00843C6D /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD516927F2B88F00843C6D /* PhysicsComponent.swift */; };
 		4ABD516C27F2C42200843C6D /* GameScene+PhysicsContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABD516B27F2C42200843C6D /* GameScene+PhysicsContact.swift */; };
+		4ADDF3E827F3FB3000E5AC63 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4ADDF3E727F3FB3000E5AC63 /* GameScene.sks */; };
+		4ADDF3EA27F3FC4E00E5AC63 /* Controller.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4ADDF3E927F3FC4E00E5AC63 /* Controller.sks */; };
+		4ADDF3EC27F3FD7D00E5AC63 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDF3EB27F3FD7D00E5AC63 /* Controller.swift */; };
+		4ADDF3EE27F4166F00E5AC63 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDF3ED27F4166F00E5AC63 /* CGFloat+Extensions.swift */; };
+		4ADDF3F027F45CE600E5AC63 /* GameScene+GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDF3EF27F45CE600E5AC63 /* GameScene+GameController.swift */; };
 		4AFC05FA27F318D2006F22D3 /* MainGameStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05F927F318D2006F22D3 /* MainGameStates.swift */; };
 		4AFC05FC27F32568006F22D3 /* SKNode+AgentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05FB27F32568006F22D3 /* SKNode+AgentDelegate.swift */; };
 		4AFC05FE27F3272B006F22D3 /* AgentComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC05FD27F3272B006F22D3 /* AgentComponent.swift */; };
@@ -80,21 +82,23 @@
 		4A6EDAF227F165B90012F0A2 /* MainTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainTileSet.sks; sourceTree = "<group>"; };
 		4A92087727EEF86B00A0A74B /* valsrevenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valsrevenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A92087A27EEF86B00A0A74B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A92087C27EEF86B00A0A74B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		4A92088027EEF86B00A0A74B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		4A92088227EEF86B00A0A74B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4A92088527EEF86B00A0A74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A92088727EEF86B00A0A74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A92088A27EEF86B00A0A74B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A92089127EF472500A0A74B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		4A92089327EFFBE600A0A74B /* Controller.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Controller.sks; sourceTree = "<group>"; };
-		4A92089527EFFEC000A0A74B /* AttackButton.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AttackButton.sks; sourceTree = "<group>"; };
 		4A92089727F0098200A0A74B /* SKScene+ViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKScene+ViewProperties.swift"; sourceTree = "<group>"; };
 		4A92089927F0125900A0A74B /* GameScene+ViewUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+ViewUpdates.swift"; sourceTree = "<group>"; };
 		4ABD516527F2AAA900843C6D /* PlayerStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStates.swift; sourceTree = "<group>"; };
 		4ABD516727F2AEED00843C6D /* CollectibleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectibleComponent.swift; sourceTree = "<group>"; };
 		4ABD516927F2B88F00843C6D /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
 		4ABD516B27F2C42200843C6D /* GameScene+PhysicsContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+PhysicsContact.swift"; sourceTree = "<group>"; };
+		4ADDF3E727F3FB3000E5AC63 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		4ADDF3E927F3FC4E00E5AC63 /* Controller.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Controller.sks; sourceTree = "<group>"; };
+		4ADDF3EB27F3FD7D00E5AC63 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		4ADDF3ED27F4166F00E5AC63 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		4ADDF3EF27F45CE600E5AC63 /* GameScene+GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameScene+GameController.swift"; sourceTree = "<group>"; };
 		4AFC05F927F318D2006F22D3 /* MainGameStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameStates.swift; sourceTree = "<group>"; };
 		4AFC05FB27F32568006F22D3 /* SKNode+AgentDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+AgentDelegate.swift"; sourceTree = "<group>"; };
 		4AFC05FD27F3272B006F22D3 /* AgentComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentComponent.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		4A193F8527F1CF2000212A06 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4ADDF3EF27F45CE600E5AC63 /* GameScene+GameController.swift */,
 				4AFC05FB27F32568006F22D3 /* SKNode+AgentDelegate.swift */,
 				4A92089727F0098200A0A74B /* SKScene+ViewProperties.swift */,
 				4A92089927F0125900A0A74B /* GameScene+ViewUpdates.swift */,
@@ -122,6 +127,7 @@
 				4A193FB227F1FF8600212A06 /* GKComponent+Node.swift */,
 				4A193FB427F2047A00212A06 /* SkTexture+LoadTextures.swift */,
 				4ABD516B27F2C42200843C6D /* GameScene+PhysicsContact.swift */,
+				4ADDF3ED27F4166F00E5AC63 /* CGFloat+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,9 +135,9 @@
 		4A193F8627F1CF4400212A06 /* Reference Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				4ADDF3E927F3FC4E00E5AC63 /* Controller.sks */,
 				4A193FA527F1D2FC00212A06 /* HealthMeter.sks */,
-				4A92089527EFFEC000A0A74B /* AttackButton.sks */,
-				4A92089327EFFBE600A0A74B /* Controller.sks */,
+				4ADDF3EB27F3FD7D00E5AC63 /* Controller.swift */,
 			);
 			path = "Reference Nodes";
 			sourceTree = "<group>";
@@ -139,7 +145,7 @@
 		4A193F8727F1CF9300212A06 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				4A92087C27EEF86B00A0A74B /* GameScene.sks */,
+				4ADDF3E727F3FB3000E5AC63 /* GameScene.sks */,
 				4A92088027EEF86B00A0A74B /* GameScene.swift */,
 			);
 			path = Scenes;
@@ -315,17 +321,16 @@
 				4A193FA427F1D2C100212A06 /* throw.mp3 in Resources */,
 				4A193F9B27F1D2C100212A06 /* player_hit.mp3 in Resources */,
 				4A193FA627F1D2FC00212A06 /* HealthMeter.sks in Resources */,
-				4A92087D27EEF86B00A0A74B /* GameScene.sks in Resources */,
 				4A6EDAF327F165B90012F0A2 /* MainTileSet.sks in Resources */,
-				4A92089427EFFBE600A0A74B /* Controller.sks in Resources */,
+				4ADDF3EA27F3FC4E00E5AC63 /* Controller.sks in Resources */,
 				4A193F9927F1D2C100212A06 /* monster_hit.mp3 in Resources */,
 				4A193FA227F1D2C100212A06 /* door_open.mp3 in Resources */,
 				4A193F9D27F1D2C100212A06 /* key.mp3 in Resources */,
 				4A193F9A27F1D2C100212A06 /* exit.mp3 in Resources */,
 				4A193FA027F1D2C100212A06 /* player_die.mp3 in Resources */,
 				4A193F9F27F1D2C100212A06 /* treasure.mp3 in Resources */,
-				4A92089627EFFEC000A0A74B /* AttackButton.sks in Resources */,
 				4A92088827EEF86B00A0A74B /* Assets.xcassets in Resources */,
+				4ADDF3E827F3FB3000E5AC63 /* GameScene.sks in Resources */,
 				4A193F9C27F1D2C100212A06 /* monster_die.mp3 in Resources */,
 				4A193FA127F1D2C100212A06 /* destroyed.mp3 in Resources */,
 				4A92088B27EEF86B00A0A74B /* LaunchScreen.storyboard in Resources */,
@@ -344,6 +349,7 @@
 				4A193FB927F206CF00212A06 /* GameObjects.swift in Sources */,
 				4A193F8427F1C3D400212A06 /* SKTileMapNode+Physics.swift in Sources */,
 				4ABD516827F2AEED00843C6D /* CollectibleComponent.swift in Sources */,
+				4ADDF3EC27F3FD7D00E5AC63 /* Controller.swift in Sources */,
 				4A193FB127F1FEE600212A06 /* GeneratorComponent.swift in Sources */,
 				4A92089227EF472500A0A74B /* Player.swift in Sources */,
 				4A193FAA27F1D46200212A06 /* HealthComponent.swift in Sources */,
@@ -352,10 +358,12 @@
 				4A193FB727F2058500212A06 /* AnimationComponent.swift in Sources */,
 				4A92089827F0098200A0A74B /* SKScene+ViewProperties.swift in Sources */,
 				4A193F9E27F1D2C100212A06 /* SoundLibrary.swift in Sources */,
+				4ADDF3EE27F4166F00E5AC63 /* CGFloat+Extensions.swift in Sources */,
 				4A92088127EEF86B00A0A74B /* GameScene.swift in Sources */,
 				4ABD516627F2AAA900843C6D /* PlayerStates.swift in Sources */,
 				4AFC05FC27F32568006F22D3 /* SKNode+AgentDelegate.swift in Sources */,
 				4ABD516A27F2B88F00843C6D /* PhysicsComponent.swift in Sources */,
+				4ADDF3F027F45CE600E5AC63 /* GameScene+GameController.swift in Sources */,
 				4A92088327EEF86B00A0A74B /* GameViewController.swift in Sources */,
 				4A92089A27F0125900A0A74B /* GameScene+ViewUpdates.swift in Sources */,
 				4A193FAF27F1E49700212A06 /* RenderComponent.swift in Sources */,
