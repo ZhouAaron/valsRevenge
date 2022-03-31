@@ -75,6 +75,19 @@ extension GameScene: SKPhysicsContactDelegate {
             if let player = playerNode as? Player, let door = doorNode {
                 player.useKeyToOpenDoor(door)
             }
+            // MARK: - Player | Platform
+        case PhysicsBody.player.categoryBitMask | PhysicsBody.exit.categoryBitMask:
+            let playerNode = contact.bodyA.categoryBitMask == PhysicsBody.player.categoryBitMask ? contact.bodyA.node : contact.bodyB.node
+            
+            // update the saved stats
+            if let player = playerNode as? Player {
+                GameData.shared.keys = player.getStats().keys
+                GameData.shared.treasure = player.getStats().treasure
+            }
+            // Load the next level
+            GameData.shared.level += 1
+            loadSceneForLevel(GameData.shared.level)
+            
         default:
             break
         }

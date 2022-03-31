@@ -34,9 +34,7 @@ class HealthComponent: GKComponent {
                                                             waitForCompletion: false)
                 dieAction = SKAction.run {
                     self.componentNode.run(playSound, completion: {
-                        // TODO: Add code to restart the game
-                        // but for now, reset the player's health
-                        self.currentHealth = self.maxHealth
+                        self.componentNode.scene?.loadGameOverScene()
                     })
                 }
                 

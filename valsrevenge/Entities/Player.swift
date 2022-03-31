@@ -32,7 +32,7 @@ class Player: SKSpriteNode {
     private let keysLabel = SKLabelNode(fontNamed: "AvenirNext-Bold")
     
     //  track how many keys Val has in her pockets and how much treasure she’s collected.
-    private var keys: Int = 0 {
+    private var keys: Int = GameData.shared.keys {
         didSet {
             keysLabel.text = "Keys: \(keys)"
             if keys < 1 {
@@ -43,7 +43,7 @@ class Player: SKSpriteNode {
         }
     }
     
-    private var treasure: Int = 0 {
+    private var treasure: Int = GameData.shared.treasure {
         didSet {
             treasureLabel.text = "Treasure: \(treasure)"
         }
@@ -79,6 +79,10 @@ class Player: SKSpriteNode {
         
         stateMachine.enter(PlayerHasNoKeyState.self)
         agent.delegate = self
+    }
+    
+    func getStats() -> (keys: Int, treasure: Int) {
+        return (self.keys, self.treasure)
     }
     
     func collectItem(_ collectibleNode: SKNode) {
@@ -174,5 +178,5 @@ class Player: SKSpriteNode {
             run(reduceSequence)
         }
     }
-
+    
 }
